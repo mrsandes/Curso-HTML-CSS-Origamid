@@ -1,0 +1,24 @@
+body {
+    font-family: Arial;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 a {
+    color: seagreen;
+}
+
+.estreia_hj {
+    color: darkred;
+}
+
+.estreia_dps {
+    color: darkblue;
+}
