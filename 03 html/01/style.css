@@ -1,0 +1,78 @@
+body {
+    font-family: Arial;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 0;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cabecalho {
+    background: white;
+    flex-basis: 1;
+    padding: 15px 25px;
+    color: black;
+    border-radius: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.info {
+    display: grid;
+    justify-content: end;
+    background: white;
+    padding: 90px 30px;
+    text-align: end;
+}
+
+.ver_mais {
+    color: white;
+    background: #ee2211;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+
+.produto {
+    max-width: 100%;
+}
+
+.vantagens {
+    padding: 30px;
+    text-align: right;
+    align-self: center;
+    font-size: 32px;
+    color: #c6c6c6;
+}
+
+.especificacoes {
+    background: white;
+    padding: 30px 60px;
+    text-align: left;
+    align-self: center;
+}
