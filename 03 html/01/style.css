@@ -24,6 +24,21 @@ img {
     max-width: 100%;
 }
 
+#shopping_cart {
+    width: 18.75px;
+    height: 18.75px;
+    position: relative;
+    top: 3px;
+}
+
+#trending {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +75,7 @@ img {
     background: red;
     border-radius: 4px;
     color: white;
+    text-transform: uppercase;
 }
 
 .detalhe {
