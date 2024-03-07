@@ -8,7 +8,11 @@ body {
     background: #f7f7f7;
 }
 
-p, a, h1, h2, h3 {
+p,
+a,
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -25,27 +29,30 @@ img {
 }
 
 #shopping_cart {
-    width: 18.75px;
-    height: 18.75px;
+    width: 1.1em;
     position: relative;
-    top: 3px;
+    top: 0.1875em;
 }
 
 #trending {
-    width: 40px;
-    height: 40px;
+    width: 1em;
+    height: 1em;
     position: relative;
-    top: 3px;
-    left: 5px;
+    top: 0.1875em;
+    left: 0.1em;
 }
 
-.menu {
+header {
+    text-align: center;
+}
+
+nav {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
 
-.menu a {
+nav a {
     background: white;
     padding: 15px 30px;
     border-radius: 4px;
@@ -53,24 +60,24 @@ img {
     text-transform: uppercase;
 }
 
-.conteudo {
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 1000px;
 }
 
-.introducao {
+.conteudo {
     background: white;
     padding: 40px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 20px;
-    justify-content: center; 
+    justify-content: center;
     align-items: end;
     text-align: end;
 }
 
-.introducao a {
+.conteudo a {
     padding: 15px 25px;
     background: red;
     border-radius: 4px;
@@ -102,17 +109,17 @@ img {
     gap: 30px;
 }
 
-.vantagens-item {
+.vantagens-items {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
 }
 
-.vantagens-item p {
+.vantagens-items p {
     grid-column: 2;
 }
 
-.rodape {
+footer {
     background: white;
     text-align: center;
     padding: 60px;
