@@ -29,17 +29,18 @@ img {
 }
 
 #shopping_cart {
-    width: 1.1em;
+    width: 18.75px;
+    height: 18.75px;
     position: relative;
-    top: 0.1875em;
+    top: 3px;
 }
 
 #trending {
-    width: 1em;
-    height: 1em;
+    width: 64px;
+    height: 64px;
     position: relative;
-    top: 0.1875em;
-    left: 0.1em;
+    top: 10px;
+    left: 6px;
 }
 
 header {
