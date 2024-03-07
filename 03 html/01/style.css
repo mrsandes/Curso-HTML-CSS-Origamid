@@ -9,7 +9,6 @@ body {
 }
 
 p,
-a,
 h1,
 h2,
 h3 {
@@ -18,6 +17,7 @@ h3 {
 
 p {
     font-size: 20px;
+    line-height: 1.3;
 }
 
 a {
@@ -50,7 +50,7 @@ header {
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
 }
 
 nav a {
@@ -77,6 +77,11 @@ main {
     align-items: end;
     text-align: end;
 }
+
+.conteudo h1 {
+    font-size: 2em;
+}
+
 
 .conteudo a {
     padding: 15px 25px;
