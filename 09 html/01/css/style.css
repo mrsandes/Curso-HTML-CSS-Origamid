@@ -1,0 +1,313 @@
+:root {
+    --fundo-1: #f7f7f7;
+    --fundo-2: white;
+    --color-1: red;
+    --color-2: #900;
+    --texto-1: black;
+    --texto-2: lightgrey;
+    --onda: url(../img/onda_clara.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo-1: #111;
+        --fundo-2: #444;
+        --fundo-3: #000;
+        --color-1: red;
+        --color-2: #900;
+        --texto-1: white;
+        --texto-2: grey;
+        --onda: url(../img/onda_escura.svg);
+    }
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+    margin: 0;
+    margin-top: 60px;
+    background: var(--fundo-1);
+    font-family: Arial;
+}
+
+/* reset */
+
+p,
+h1,
+h2,
+h3 {
+    color: var(--texto-1);
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* gerals */
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+}
+
+.logo {
+    min-width: 40%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar a {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: var(--fundo-2);
+    padding: 15px 30px;
+    color: var(--texto-1);
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    border-color: var(--color-1);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+
+.introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    background: var(--fundo-2);
+    padding: 40px;
+    text-align: end;
+}
+
+.introducao::before {
+    position: relative;
+    bottom: 35px;
+    left: 80px;
+    background: var(--color-1);
+    padding: 2px 40px;
+    content: "";
+}
+
+.introducao h1 {
+    position: relative;
+    font-size: 32px;
+}
+
+.introducao a {
+    border-radius: 4px;
+    background: var(--color-1);
+    padding: 15px 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.introducao a:hover {
+    transition: 0.3s;
+    background: var(--color-2);
+}
+
+.introducao a::after {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background: url(../img/shopping_cart.svg) center/cover;
+    width: 16px;
+    height: 16px;
+    content: "";
+}
+
+.subtitulo {
+    display: block;
+    align-self: center;
+    background-image: var(--onda);
+    padding-right: 40px;
+    color: var(--texto-2);
+    font-size: 64px;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.vantagens {
+    background: var(--fundo-2);
+    padding: 40px;
+}
+
+.vantagens_lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.vantagens-items {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    border-left: 5px solid transparent;
+    padding: 30px 15px;
+}
+
+.vantagens-items p {
+    grid-column: 2;
+}
+
+.vantagens-items:nth-child(odd) {
+    background: var(--fundo-1);
+}
+
+.vantagens-items:hover {
+    border-color: var(--color-1);
+}
+
+footer {
+    box-sizing: border-box;
+    background: var(--fundo-2);
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+/* break points */
+
+@media (max-width: 1050px) {
+
+    body,
+    header {
+        gap: 20px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .introducao {
+        align-items: center;
+        text-align: center;
+    }
+
+    .introducao::before {
+        content: none;
+    }
+
+    .introducao a::after {
+        content: none;
+    }
+
+    .subtitulo {
+        padding: 50px;
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    a,
+    p {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    body {
+        margin-top: 24px;
+    }
+
+    header {
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 9.6px;
+    }
+
+    .conteudo {
+        max-width: 300px;
+    }
+
+    .introducao {
+        padding: 25px;
+    }
+
+    .introducao h1 {
+        font-size: 16px;
+    }
+
+    .introducao a {
+        padding: 10px 15px;
+    }
+
+    .subtitulo {
+        font-size: 32px;
+    }
+
+    .icons {
+        width: 15px;
+        height: 15px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 7.5008px;
+    }
+
+    .conteudo {
+        max-width: 240px;
+    }
+
+    .introducao {
+        padding: 25px;
+    }
+
+    .subtitulo {
+        padding: 20px;
+    }
+
+    .vantagens {
+        padding: 20px;
+    }
+}
