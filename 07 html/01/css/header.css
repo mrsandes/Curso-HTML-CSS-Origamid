@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
 }
 
 .header img {
@@ -13,13 +13,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .header-menu a {
     display: block;
-    /* transition: 0.3s ease; */
-    padding: 10px 20px;
+    transition: 0.3s ease;
+    padding: 0.625rem 1.25rem;
     color: lightgrey;
     font-size: 1.125rem;
 }
@@ -29,15 +29,15 @@
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .header {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: 1.25rem;
+        padding: 1.25rem;
     }
 
     .header a {
-        border-radius: 4px;
+        border-radius: 0.25rem;
         background: #f5f5f5;
     }
 
@@ -46,20 +46,20 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
     .header a {
-        padding: 8px 16px;
+        padding: 0.5rem 1rem;
         font-size: 0.75rem;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
     .header {
-        gap: 10px;
-        padding: 10px;
+        gap: 0.625rem;
+        padding: 0.625rem;
     }
 
     .header-menu a {
-        padding: 5px 10px;
+        padding: 0.3125rem 0.625rem;
     }
 }

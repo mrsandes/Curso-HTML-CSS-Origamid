@@ -4,10 +4,22 @@
 
 .formacao {
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 2fr;
-    gap: 200px;
-    padding: 80px 20px;
+    gap: 12.5rem;
+    padding: 5rem 1.25rem;
     color: white;
+}
+
+.formacao::after {
+    position: absolute;
+    bottom: -3.75rem;
+    left: -3.125rem;
+    z-index: 2;
+    background: url(../img/detalhe2.svg) center/cover;
+    width: 8rem;
+    height: 8rem;
+    content: "";
 }
 
 .formacao-subtitulo {
@@ -18,7 +30,7 @@
 }
 
 .formacao-texto {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     max-width: 35rem;
     color: grey;
     font-size: 1.25rem;
@@ -30,20 +42,20 @@
 }
 
 .faculdade-lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3.75rem;
 }
 
 .faculdade-item {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem;
     background: black;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .faculdade-item:hover {
@@ -51,7 +63,7 @@
 }
 
 .faculdade-tipo {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #a3a3a3;
     font-size: 0.875rem;
     text-transform: uppercase;
@@ -60,15 +72,15 @@
 .faculdade-curso {
     position: relative;
     flex: 1;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .faculdade-curso::before {
     position: absolute;
-    left: -22px;
+    left: -1.375rem;
     background: linear-gradient(to bottom, yellow, greenyellow);
-    width: 4px;
-    height: 24px;
+    width: 0.25rem;
+    height: 1.5rem;
     content: "";
 }
 
@@ -78,7 +90,7 @@
 
 .formacao-extra {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .formacao-extra strong {
@@ -87,7 +99,7 @@
 
 .formacao-extra h3 {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     color: #a3a3a3;
     font-size: 0.875rem;
     line-height: 1.4;
@@ -96,32 +108,32 @@
 
 .formacao-extra h3::before {
     position: absolute;
-    left: -35px;
-    width: 24px;
-    height: 24px;
+    left: -2.1875rem;
+    width: 1.5rem;
+    height: 1.5rem;
     content: "";
 }
 
 .cursos h3::before {
-    background: url(../img/awards.svg);
+    background: url(../img/awards.svg) no-repeat center/cover;
 }
 
 .idiomas h3::before {
-    background: url(../img/language.svg);
+    background: url(../img/language.svg) no-repeat center/cover;
 }
 
 .cursos {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .formacao-extra li {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 1.125rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
     .formacao-subtitulo {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-size: 5rem;
     }
 
@@ -129,12 +141,20 @@
         grid-template-columns: 1fr;
         gap: 0;
         margin: 0 auto;
-        padding: 40px 20px;
-        max-width: 665px;
+        padding: 2.5rem 1.25rem;
+        max-width: 41.5625rem;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {  
+    .faculdade-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .faculdade-curso {
+        margin-bottom: 0.625rem;
+    }
+
     .formacao-extra {
         flex-direction: column;
         align-items: center;
@@ -142,29 +162,18 @@
     }
 }
 
-@media (max-width: 750px) {
-    .faculdade-lista {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 40.625rem) {
+    .formacao::after {
+        visibility: hidden;
     }
 
-    .faculdade-item {
-        min-width: 20rem;
-    }
-
-    .faculdade-curso {
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 650px) {
     .formacao-subtitulo {
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
         font-size: 3rem;
     }
 
     .formacao-texto {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-size: 1rem;
     }
 
@@ -175,43 +184,37 @@
     }
 
     .formacao-extra {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .cursos {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .cursos h3 {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 0.75rem;
     }
 
     .cursos li {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 0.75rem;
     }
 
     .idiomas h3 {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 0.75rem;
     }
 
     .idiomas li {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 0.75rem;
     }
 }
 
-@media (max-width: 550px) {
-    .faculdade-item {
-        min-width: 0;
-    }
-}
-
-@media (max-width: 350px) {
+@media (max-width: 21.875rem) {
     .formacao-subtitulo {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 1.5rem;
     }
 
