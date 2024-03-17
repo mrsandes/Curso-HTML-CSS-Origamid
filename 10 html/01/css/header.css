@@ -1,0 +1,28 @@
+.header-bg {
+    background-color: #000000;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    color: #ffffff;
+    padding: 16px 0;
+    display: inline-block;
+    font-size: 18px;
+}
