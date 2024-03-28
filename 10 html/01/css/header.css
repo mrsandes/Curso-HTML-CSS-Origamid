@@ -5,13 +5,13 @@
 .header {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
+    gap: 1.25rem;
     box-sizing: border-box;
-    max-width: 75rem;
     margin: 0 auto;
+    padding: 1.25rem;
+    max-width: 75rem;
 }
 
 .header-menu {
@@ -21,22 +21,24 @@
 }
 
 .header-menu a {
-    color: #ffffff;
-    padding: 1rem 0;
     display: inline-block;
-    font-size: 1.125rem;
     position: relative;
+    padding: 1rem 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-family: 'Poppins';
 }
 
 .header-menu a::after {
-    content: "";
     display: block;
+    position: absolute;
+    transition: 0.3s;
+    margin-top: 0.25rem;
+    background: #ffffff;
     width: 0;
     height: 0.125rem;
-    background: #ffffff;
-    margin-top: 0.25rem;
-    transition: 0.3s;
-    position: absolute;
+    content: "";
 }
 
 .header-menu a:hover::after {
@@ -49,9 +51,9 @@
     }
 
     .header-menu a {
+        border-radius: 0.25rem;
         background: #111111;
         padding: 0.75rem 1rem;
-        border-radius: 0.25rem;
     }
 
     .header-menu a::after {
