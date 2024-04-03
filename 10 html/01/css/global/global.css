@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding-bottom: 600px;
+    color: var(--cor-11);
     font-family: Arial;
 }
 
@@ -20,6 +20,15 @@ img {
     max-width: 100%;
 }
 
-h1, p {
+img[src$=".jpg"] {
+    border-radius: 0.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
     margin: 0;
 }
