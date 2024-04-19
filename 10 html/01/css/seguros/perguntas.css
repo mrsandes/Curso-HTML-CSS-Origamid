@@ -34,8 +34,8 @@
 .perguntas dt::after {
     display: inline-block;
     background: url("../../img/icones/seta-abrir.svg");
-    width: 1.125rem;
-    height: 0.5rem;
+    width: 14px;
+    height: 6px;
     content: "";
 }
 

@@ -14,9 +14,10 @@
     padding-bottom: 10rem;
 }
 
-.tecnologia-conteudo>span {
+.tecnologia-conteudo > span {
     display: block;
     margin-bottom: 1.25rem;
+    text-transform: lowercase;
 }
 
 .tecnologia-conteudo h2 {

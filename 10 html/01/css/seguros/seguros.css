@@ -57,8 +57,8 @@
     position: absolute;
     left: -1.3125rem;
     background-image: url(../../img/icones/lista.svg);
-    width: 1rem;
-    height: 0.75rem;
+    width: 13px;
+    height: 9px;
     content: "";
 }
 
